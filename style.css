@@ -1,0 +1,117 @@
+/* Reset some default browser styles */
+body, h1, h2, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #333; /* Default background color */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.5s ease; /* Smooth transition */
+    background-size: cover; /* Ensure the background covers the entire area */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-position: center center; /* Center the background */
+}
+
+/* Container styles */
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 400px;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+/* Header styles */
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin: 10px 0 20px;
+    font-size: 1.2em;
+}
+
+/* Search box styles */
+.search-box {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.search-box input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: calc(100% - 100px);
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.search-box input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.search-box button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #0072ff;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-box button:hover {
+    background: #005bb5;
+    transform: scale(1.1);
+}
+
+/* Weather info styles */
+.weather-info {
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.weather-info:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.weather-info h2,
+.weather-info p {
+    margin: 10px 0;
+}
+
+.weather-info .temperature {
+    font-size: 1.5em;
+    color: #ffeb3b;
+}
+
+.weather-info .description {
+    font-size: 1.2em;
+}
